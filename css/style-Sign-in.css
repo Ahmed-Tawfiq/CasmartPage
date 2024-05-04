@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.loading{
+    position: absolute;
+    bottom: 0;
+
+}
+
+h2{
+    position: relative;
+    color: #fff;
+    font-size: 4em;
+    border-bottom: 16px solid #fff;
+    line-height: 1.4;
+    font-family: consolas;
+    text-transform: uppercase;
+    top: 200;
+
+}
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: dodgerblue;
+    border-bottom: 16px solid dodgerblue;
+    animation: lod 3s linear ;
+    overflow: hidden;
+
+}
+@keyframes lod {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.contianer{
+    background-image: url(../images/pexels-daniel-adesina-833052.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+.box {
+    background: antiquewhite;
+    width: 30%;
+    padding: 20px;
+    position: absolute;
+    top: 18%;
+    left: 19%;
+    border: groove dodgerblue 2px;
+    border-radius: 8px;
+    z-index: 4;
+}
+.box p {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+    word-spacing: 2px;
+
+}
+.box h1 {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: fantasy;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 12px 0px 9px 0px;
+}
+
+.boxs1 {
+    margin: auto;
+    padding: 0px 21px;
+    padding-top: 16px;
+}
+input#username {
+    border-radius: 6px;
+}
+input#password {
+    border-radius: 6px;
+}
+label {
+    font-style: oblique;
+    font-family: auto;
+    color: black;
+    font-size: 18px;
+}
+.boxx3 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+    margin-left: 21px;
+    margin: 7px 0px 1px 27px;
+}
+
+button#signin {
+    width: 90%;
+    background: black;
+    letter-spacing: 4px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 800;
+    margin: auto;
+    text-align: center;
+    margin-left: 21px;
+    overflow: hidden;
+    transition: all 0.3s;
+    display: block;
+}
+button#signin:hover{
+    background-color: rgba(37, 34, 34, 0.947);
+    letter-spacing: 5px;
+}
+
+.sochia {
+    display: flex;
+    flex-direction: row;
+    margin: 14px 14px;
+    justify-content: space-evenly;
+}
+
+.sochia a {
+    font-size: 20px;
+    padding: 6px 40px;
+    background: transparent;
+    border: solid 2px black;
+    text-decoration: none;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #0000008f;
+}   
+
+.sppan p {
+    font-size: 18px;
+    font-family: unset;
+}
